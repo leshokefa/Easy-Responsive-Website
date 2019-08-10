@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="containerInHeader">
+            <img class="show-mobile hide-desktop" onclick="show_hide()" src="images/menu.png" alt="Menu">
+           <ul class="ul" id="ul">
+                <li class="link1"><a href="#">Home</a></li>
+                <li class="link2"><a href="#">Work</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <a href="#" class="log-in">Log In</a>
+            <a href="#" class="register">Register</a>
+        </div>
+    </header>
+    <div class="middle-container">
+        <h1>Do something very easy</h1>
+        <h6>The World's Most Awesome Tool</h6>
+        <a href="#" class="button"> Get started</a>
+        <h3>Do whatever you want <br> when you want, <br> and you will get <br> exactly what you want.</h3>
+    </div>
+    <div class="footer">
+    <footer class="gray-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <address class="address">Bul. Admire Me 18A</address>
+        <a href="#" class="privacy-policy">Privacy Policy</a>
+        <a href="#" class="privacy-policy">Contact</a>
+    </footer>
+    </div>
+    </body>
+    <script>
+        function show_hide(){
+            var click = document.getElementById("ul");
+            if(click.style.display === "none"){
+                click.style.display = "block";
+            }
+            else{
+                click.style.display = "none";
+            }
+        }
+    </script>
+</html>
